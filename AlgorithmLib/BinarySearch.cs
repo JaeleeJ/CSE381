@@ -4,8 +4,6 @@ public static class BinarySearch
 {
     public static int Search(List<IComparable> data, IComparable target)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
-        
         var NOT_FOUND = -1;
         // beginning of list
         var p = 0;
