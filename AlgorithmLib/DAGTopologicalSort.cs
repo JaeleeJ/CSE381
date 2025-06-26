@@ -6,7 +6,6 @@ public static class DAGTopologicalSort
 {
     public static List<int> Sort(Graph g)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // create new array and set the length to be the size of graph
         int[] in_degree = new int[g.Size()];
 
