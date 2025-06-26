@@ -4,7 +4,6 @@ public static class BellmanFordShortestPath
 {
     public static (List<int>, List<int>) ShortestPath(Graph g, int startVertex)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         //make lists for the shortest and predecessor
         List<int> shortest = new List<int>(new int[g.Size()]);
         List<int> pred = new List<int>(new int[g.Size()]);
