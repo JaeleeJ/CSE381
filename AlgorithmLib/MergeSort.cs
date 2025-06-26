@@ -3,8 +3,7 @@
 public static class MergeSort
 {
     private static void Merge(List<IComparable> data, int first, int mid, int last)
-    {
-        // ADD CODE HERE 
+    { 
         var n1 = mid - first + 1;
         var n2 = last - mid;
 
@@ -65,13 +64,12 @@ public static class MergeSort
 
     public static void Sort(List<IComparable> data) 
     {
-        // ADD CODE HERE 
         // call recursively
         _Sort(data, 0, data.Count - 1);
         
     }
 
-    // new function for recursion
+    // function for recursion
     private static void _Sort(List<IComparable> data, int first, int last)
     {
         // return if item is size 1 --> already sorted
