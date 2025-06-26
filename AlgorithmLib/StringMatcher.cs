@@ -6,7 +6,6 @@ public static class StringMatcher
 {
     private static List<Dictionary<char, int>> BuildTable(string pattern, List<char> inputs)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // make table
         List<Dictionary<char, int>> table = new List<Dictionary<char, int>>();
         
@@ -39,7 +38,6 @@ public static class StringMatcher
     
     public static List<int> Match(string text,  string pattern, List<char> inputs)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // make table
         List<Dictionary<char, int>> table = BuildTable(pattern, inputs);
         int matchState = table.Count - 1;
