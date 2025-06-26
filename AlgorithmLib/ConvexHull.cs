@@ -26,7 +26,6 @@ public static class ConvexHull
 
     private static int Orientation(Point a, Point b, Point c)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // get cross product
         var cross_prod = (b.X - a.X) * (c.Y - b.Y) - (b.Y - a.Y) * (c.X - b.X);
         // colinear
@@ -46,13 +45,9 @@ public static class ConvexHull
         }
         
     }
-    
-    // If needed, you can create more private functions to be used by the 
-    // GenerateHull function below.
 
     public static List<Point> GenerateHull(List<Point> points)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // convex hull not possible with under 3 points -> triangle
         if (points.Count < 3)
         {
