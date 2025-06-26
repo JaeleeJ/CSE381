@@ -4,7 +4,6 @@ public static class QuickSort
 {
     private static int Partition(List<IComparable> data, int first, int last)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // set q to first
         var q = first;
         // for u = p to r-1
@@ -25,7 +24,6 @@ public static class QuickSort
 
     public static void Sort(List<IComparable> data)
     {
-        // ADD CODE HERE
         // call _Sort since data is the only parameter given
         _Sort(data, 0, data.Count() - 1);
     }
