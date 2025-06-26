@@ -14,7 +14,6 @@ public static class HuffmanTree
 
     public static Dictionary<char,int> Profile(String text)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // create profile
         Dictionary<char, int> profile = new Dictionary<char, int>();
         
@@ -31,7 +30,6 @@ public static class HuffmanTree
     }
     public static Node BuildTree(Dictionary<char, int> profile)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // {
         //     Count = 0,
         //     Letter = '\0',
@@ -69,7 +67,6 @@ public static class HuffmanTree
 
     public static Dictionary<char, string> CreateEncodingMap(Node root)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // create map
         Dictionary<char, string> map = new Dictionary<char, string>();
         // call recursive function
@@ -102,7 +99,6 @@ public static class HuffmanTree
 
     public static string Encode(string text, Dictionary<char, string> map)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         var result = "";
         // add encoded text to string
         foreach (char letter in text)
@@ -115,7 +111,6 @@ public static class HuffmanTree
 
     public static string Decode(string text, Node tree)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         Node currNode = tree;
         var result = "";
         
