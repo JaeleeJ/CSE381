@@ -7,7 +7,6 @@ public class RSA
 {
     private static (BigInteger, BigInteger, BigInteger) Euclid(BigInteger a, BigInteger b)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // base case
         // if b = 0, return the triple
         if (b == 0)
@@ -24,7 +23,6 @@ public class RSA
 
     private static BigInteger ModularExponentiation(BigInteger x, BigInteger y, BigInteger n)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // base case
         if (y == 0)
         {
@@ -48,7 +46,6 @@ public class RSA
 
     public static BigInteger GeneratePrivateKey(BigInteger p, BigInteger q, BigInteger e) 
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         var r = (p - 1) * (q - 1);
         
         // modular multiplicative inverse of e mod r with Euclid
@@ -65,14 +62,12 @@ public class RSA
 
     public static BigInteger Encrypt(BigInteger value, BigInteger e, BigInteger n)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // modular exponentiation to encrypt
         return ModularExponentiation(value, e, n);
     }
 
     public static BigInteger Decrypt(BigInteger value, BigInteger d, BigInteger n)
     {
-        // ADD CODE HERE AND FIX RETURN STATEMENT
         // modular exponentiation to decrypt
         return ModularExponentiation(value, d, n);
     }
